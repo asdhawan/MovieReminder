@@ -1,0 +1,10 @@
+<div *ngIf="movie" class="d-flex justify-content-center">
+  <div class="card">
+    <div class="card-header"><h2>{{ movie.name | uppercase }}</h2></div>
+    <img class="card-img-top" src="{{ movie.backdropUrl }}" alt="">
+    <div class="card-body">
+      <p class="card-text">{{ movie.synopsis }}</p>
+      <span>id: </span>{{movie.id}}
+    </div>
+  </div>
+</div>

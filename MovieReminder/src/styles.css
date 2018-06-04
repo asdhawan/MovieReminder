@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  background: url('assets/img/background.jpg');
+}
+
+.appcontent {
+  background-color: white;
+  box-shadow: 1px 1px 1px white;
+  margin: 0 auto;
+}
