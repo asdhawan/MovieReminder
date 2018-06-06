@@ -45,11 +45,11 @@ export class MovieService {
     var movieObj: movie = {
       id: json.id,
       name: json.title,
-      releaseDate: json.release_date,
-      seenYN: false,
+      release_date: json.release_date,
+      seen: false,
       synopsis: json.overview,
-      backdropUrl: `https://image.tmdb.org/t/p/w1280${json.backdrop_path}`,
-      posterUrl: `https://image.tmdb.org/t/p/w500${json.poster_path}`
+      backdrop_url: `https://image.tmdb.org/t/p/w1280${json.backdrop_path}`,
+      poster_url: `https://image.tmdb.org/t/p/w500${json.poster_path}`
     };
     return movieObj;
   }

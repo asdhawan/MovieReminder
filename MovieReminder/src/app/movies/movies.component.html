@@ -3,7 +3,7 @@
 <div class="card-columns">
   <div class="card border-info movies" *ngFor="let m of movies">
     <a routerLink="/movies/{{m.id}}">
-      <img class="card-img-top" src="{{ m.posterUrl }}" alt="{{ m.name }}">
+      <img class="card-img-top" src="{{ m.poster_url }}" alt="{{ m.name }}">
       <div class="card-body text-info">
         <h4 class="text-muted">{{ m.name | titlecase }}</h4>
       </div>

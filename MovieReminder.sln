@@ -5,6 +5,14 @@ VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReminder", "MovieReminder\MovieReminder.csproj", "{812CF468-8267-4DEE-945B-16B532CAAAD8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonEFUtils", "CommonEFUtils\CommonEFUtils\CommonEFUtils.csproj", "{44CE5B33-F7A4-42B9-BFB8-40C96EF996E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonUtils", "CommonUtils\CommonUtils\CommonUtils.csproj", "{4AE89C08-9A33-4AC2-8D65-0451EDFA79E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MREntities", "MREntities\MREntities.csproj", "{CBD90F57-30B4-4F75-BB2F-9E73253BFC90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonUtils.Standard", "CommonUtils.Standard\CommonUtils.Standard.csproj", "{78C72C36-BC35-4D55-95F9-186B2501E5DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +23,22 @@ Global
 		{812CF468-8267-4DEE-945B-16B532CAAAD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{812CF468-8267-4DEE-945B-16B532CAAAD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{812CF468-8267-4DEE-945B-16B532CAAAD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44CE5B33-F7A4-42B9-BFB8-40C96EF996E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44CE5B33-F7A4-42B9-BFB8-40C96EF996E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44CE5B33-F7A4-42B9-BFB8-40C96EF996E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44CE5B33-F7A4-42B9-BFB8-40C96EF996E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4AE89C08-9A33-4AC2-8D65-0451EDFA79E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AE89C08-9A33-4AC2-8D65-0451EDFA79E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AE89C08-9A33-4AC2-8D65-0451EDFA79E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AE89C08-9A33-4AC2-8D65-0451EDFA79E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBD90F57-30B4-4F75-BB2F-9E73253BFC90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBD90F57-30B4-4F75-BB2F-9E73253BFC90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBD90F57-30B4-4F75-BB2F-9E73253BFC90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBD90F57-30B4-4F75-BB2F-9E73253BFC90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78C72C36-BC35-4D55-95F9-186B2501E5DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78C72C36-BC35-4D55-95F9-186B2501E5DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78C72C36-BC35-4D55-95F9-186B2501E5DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78C72C36-BC35-4D55-95F9-186B2501E5DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

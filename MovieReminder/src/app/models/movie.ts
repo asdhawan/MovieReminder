@@ -2,12 +2,12 @@ export class movie {
   id: number;
   name: string;
   synopsis: string;
-  seenYN: boolean;
-  releaseDate: Date;
-  backdropUrl: string;
-  posterUrl: string;
+  seen: boolean;
+  release_date: Date;
+  backdrop_url: string;
+  poster_url: string;
 
   constructor() {
-    this.seenYN = false;
+    this.seen = false;
   };
 }
