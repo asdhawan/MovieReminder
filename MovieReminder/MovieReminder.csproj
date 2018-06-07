@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
     <TypeScriptCompileBlocked>true</TypeScriptCompileBlocked>
     <PostBuildEvent>ng build --aot</PostBuildEvent>
     <TypeScriptToolsVersion>Latest</TypeScriptToolsVersion>
@@ -35,9 +35,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.5" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.1.0" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
-    <PackageReference Include="MySql.Data.EntityFrameworkCore" Version="8.0.11" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="RestSharp" Version="106.3.0" />
   </ItemGroup>
@@ -64,7 +63,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MREntities\MREntities.csproj" />
+    <ProjectReference Include="..\MovieReminderEntities\MovieReminderEntities.csproj" />
   </ItemGroup>
 
   <ItemGroup>

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MovieReminderEntities.Model;
 
 namespace MovieReminder {
   public class Startup {
@@ -16,7 +17,7 @@ namespace MovieReminder {
     public void ConfigureServices(IServiceCollection services) {
       services.AddMvc();
       services.AddSingleton(Configuration);
-      services.AddDbContext<MREntities.Models.movieminderContext>(opts => opts.UseMySql(Configuration.GetConnectionString("MREntitiesConnectionString")));
+      services.AddDbContext<movieminderContext>(opts => opts.UseSqlServer(Configuration.GetConnectionString("MovieMinderEntitiesConnectionString")));
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
