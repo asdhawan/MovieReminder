@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MovieReminderEntities.Model;
+using System.IO;
 
 namespace MovieReminder {
   public class Startup {
@@ -25,8 +26,18 @@ namespace MovieReminder {
       if (env.IsDevelopment()) {
         app.UseDeveloperExceptionPage();
       }
-      
-      app.UseMvc();
+
+      app.Use(async (context, next) => {
+        await next();
+        if (context.Response.StatusCode == 404 &&
+           !Path.HasExtension(context.Request.Path.Value) &&
+           !context.Request.Path.Value.StartsWith("/api/")) {
+          context.Request.Path = "/index.html";
+          await next();
+        }
+      });
+
+      app.UseMvcWithDefaultRoute();
       app.UseDefaultFiles();
       app.UseStaticFiles();
     }
