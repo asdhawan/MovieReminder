@@ -12,9 +12,24 @@ export class MovieService {
   }
 
   getMoviesNowPlaying(): Promise<movie[]> {
-    return this.getMovieList(`https://api.themoviedb.org/3/movie/now_playing?page=1&language=en-US&api_key=${this.apiKey}`);
+    //return this.getMovieList(`https://api.themoviedb.org/3/movie/now_playing?page=1&language=en-US&api_key=${this.apiKey}`);
+    return this.getMovieList('api/MovieDb');
   }
 
+  search(partialName: string): Promise<movie[]> {
+    return this.getMovieList(`api/MovieDb/search?partialName=${partialName}`);
+  }
+  //getMovieDetail(id: number): Promise<movie> {
+  //  var options: RequestInit = {
+  //    method: 'GET'
+  //  };
+  //  return fetch(`https://api.themoviedb.org/3/movie/${id}?api_key=${this.apiKey}`, options)
+  //    .then((response: Response) => response.json())
+  //    .then((jsonData: any) => {
+  //      return this.newMovieObject(jsonData);
+  //    });
+  //}
+  
   getMovieDetail(id: number): Promise<movie> {
     var options: RequestInit = {
       method: 'GET'
@@ -34,7 +49,7 @@ export class MovieService {
       .then((response: Response) => response.json())
       .then((jsonData: any) => {
         var movies: movie[] = new Array<movie>();
-        jsonData.results.forEach(json => {
+        jsonData.forEach(json => {
           movies.push(this.newMovieObject(json));
         });
         return movies;
@@ -49,8 +64,22 @@ export class MovieService {
       seen: false,
       synopsis: json.overview,
       backdrop_url: `https://image.tmdb.org/t/p/w1280${json.backdrop_path}`,
-      poster_url: `https://image.tmdb.org/t/p/w500${json.poster_path}`
+      poster_url: `https://image.tmdb.org/t/p/w500${json.poster_path}`,
+      thumbnail_url: `https://image.tmdb.org/t/p/w300${json.poster_path}`
     };
     return movieObj;
   }
+
+  //private newMovieObject(json: any): movie {
+  //  var movieObj: movie = {
+  //    id: json.Id,
+  //    name: json.Title,
+  //    release_date: json.ReleaseDate,
+  //    seen: false,
+  //    synopsis: json.Overview,
+  //    backdrop_url: `https://image.tmdb.org/t/p/w1280${json.BackdropPath}`,
+  //    poster_url: `https://image.tmdb.org/t/p/w500${json.PosterPath}`
+  //  };
+  //  return movieObj;
+  //}
 }

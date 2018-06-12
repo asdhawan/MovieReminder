@@ -6,6 +6,7 @@ export class movie {
   release_date: Date;
   backdrop_url: string;
   poster_url: string;
+  thumbnail_url: string;
 
   constructor() {
     this.seen = false;

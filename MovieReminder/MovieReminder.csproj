@@ -38,6 +38,7 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.0" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
     <PackageReference Include="RestSharp" Version="106.3.0" />
+    <PackageReference Include="TMDbLib.Core2" Version="1.0.0" />
   </ItemGroup>
 
   <ItemGroup>

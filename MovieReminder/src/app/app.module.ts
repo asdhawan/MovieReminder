@@ -10,12 +10,13 @@ import { MovieSearchComponent } from './moviesearch/moviesearch.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import * as ngxbs from 'ngx-bootstrap';
+//import * as mdb from 'moviedb';
 
 @NgModule({
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule    
   ],
   declarations: [
     AppComponent,

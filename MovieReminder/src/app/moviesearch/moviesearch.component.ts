@@ -22,11 +22,10 @@ export class MovieSearchComponent implements OnInit {
   ngOnInit() { }
 
   handleSearch(): void {
-    alert(this.searchObj.name);
-    this.movieSvc.getMovieDetail(395990)
-      .then((m: movie) => {
-        this.searchResults = new Array<movie>();
-        this.searchResults.push(m);
+    this.movieSvc.search(this.searchObj.name)
+      .then((results: movie[]) => {
+        this.searchResults = results;
+        //this.searchResults.push(m);
       });
   }
 }

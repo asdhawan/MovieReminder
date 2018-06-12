@@ -1,5 +1,5 @@
 <div class="d-lg-flex justify-content-center">
-  <div class="bg-dark p-3 mx-lg-5 mt-lg-5 border border-dark rounded">
+  <div class="col-lg-8 col-xl-6 bg-dark p-3 mx-lg-5 mt-lg-5 border border-dark rounded">
     <div class="bg-white p-3 border border-light">
       <h1>Search</h1>
       <div class="card bg-light p-2">
@@ -14,9 +14,15 @@
           <!--</form>-->
         </div>
         <div class="card-body bg-light p-2">
-          <ul>
-            <li *ngFor="let m of searchResults">{{m.name}}</li>
-          </ul>
+          <div class="card-group justify-content-center">
+            <a routerLink="/movies/{{m.id}}" *ngFor="let m of searchResults" class="card text-white" style="min-width: 150px; max-width: 150px;">
+              <img class="card-img" src="{{m.thumbnail_url}}" alt="" />
+              <div class="card-img-overlay p-2">
+                <div class="card-title bg-secondary p-1 mb-0 rounded-top">{{m.name}}</div>
+                <div class="card-text bg-light text-dark px-1 rounded-bottom"><small>Release Year: {{m.release_date | date:'yyyy'}}</small></div>
+              </div>              
+            </a>
+          </div>
         </div>
       </div>
     </div>

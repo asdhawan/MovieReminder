@@ -11,7 +11,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonUtils", "CommonUtils\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonUtils.Standard", "CommonUtils.Standard\CommonUtils.Standard.csproj", "{78C72C36-BC35-4D55-95F9-186B2501E5DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieReminderEntities", "MovieReminderEntities\MovieReminderEntities.csproj", "{4998EDE7-F6B1-48BA-90BB-948E60C6E586}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieReminderEntities", "MovieReminderEntities\MovieReminderEntities.csproj", "{4998EDE7-F6B1-48BA-90BB-948E60C6E586}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonWebUtils.Standard", "CommonWebUtils.Standard\CommonWebUtils.Standard.csproj", "{CBF20F52-AEB0-4B38-A6FA-B6615680EA65}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{4998EDE7-F6B1-48BA-90BB-948E60C6E586}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4998EDE7-F6B1-48BA-90BB-948E60C6E586}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4998EDE7-F6B1-48BA-90BB-948E60C6E586}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBF20F52-AEB0-4B38-A6FA-B6615680EA65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBF20F52-AEB0-4B38-A6FA-B6615680EA65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBF20F52-AEB0-4B38-A6FA-B6615680EA65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBF20F52-AEB0-4B38-A6FA-B6615680EA65}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
